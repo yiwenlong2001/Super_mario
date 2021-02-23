@@ -16,9 +16,7 @@ class Game:
                     self.keys = pygame.key.get_pressed()
                 elif event.type == pygame.KEYUP:
                     self.keys = pygame.key.get_pressed()
-            state.update(self.screen)
-            pygame.display.update()
-            self.clock.tick(60)            
+        pass            
 
 def load_graph(path, accept=(' .jpg', ' .png', ' .bmp', ' .gif')):
     graphics = {}
